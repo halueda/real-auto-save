@@ -99,7 +99,7 @@
 
   (when (not real-auto-save-mode) ;; OFF
     (when (buffer-file-name)
-      (real-auto-save-remove-buffer-from-list))
+      (real-auto-save-remove-buffer-from-list)))
 
   (when real-auto-save-mode ;; ON
     (if (buffer-file-name)
