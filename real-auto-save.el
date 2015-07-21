@@ -105,9 +105,9 @@
         (set-buffer elem)
         (if (buffer-modified-p)
             (if (verify-visited-file-modtime) 
-                 (save-buffer) 
-               (message (format"%s has changed since visited or saved.  Not saved automatically." elem))) 
-           ))) 
+                (save-buffer)
+	      (message (format"%s has changed since visited or saved.  Not saved automatically." elem)))
+          )))
     (real-auto-save-restart-timer)))
 
 (defun real-auto-save-remove-buffer-from-list ()
